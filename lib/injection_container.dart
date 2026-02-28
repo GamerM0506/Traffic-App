@@ -126,7 +126,5 @@ Future<void> init() async {
   sl.registerFactory(
     () => TrafficSignCategoryBloc(getTrafficSignCategories: sl()),
   );
-  sl.registerFactory(
-        () => TrafficSignListBloc(getTrafficSignsByGroup: sl()),
-  );
+  sl.registerFactory(() => TrafficSignListBloc(getTrafficSignsByGroup: sl()));
 }
